@@ -11,15 +11,15 @@ print(relative_path + "; This is relative path")
 print(full_path + "; This is the full path")
 print("\n") ## Blank line
 
-json_file = open(relative_path + "file.json") ## Use the relative path, and open the json file
+json_file = open(full_path + "file.json") ## Use the full path, and open the json file
 
 data = json.load(json_file) ## Convert to python dict 
 
-def print_json():
+def print_json(): ## Print dictionary function
     for i in data['certifications']:
         print(i)
 
-def decode_json():
+def decode_json(): ## Decode dictionary 
     print("\n") ## Blank line
     print("This is the decoded JSON example:")
     for cert_names in data['certifications']:
