@@ -4,7 +4,7 @@ import os
 ## Get paths and combine to create full path
 absolute_path = os.path.dirname(__file__)
 relative_path = "json/"
-file_name = "file.json"
+file_name = input("What is the file name?") # Accept user input to define file to read
 full_path = os.path.join(absolute_path, relative_path, file_name)
 print("\n") ## Blank line
 
